@@ -147,7 +147,7 @@ def watermark(url, wm):
 
         marked_img = make_watermark(img, mark, position, opacity, shift)
         marked_img.save(wm_path)
-    except Exception, e:
+    except Exception as e:
         error("Cant create watermark for %s. Error type: %s. Msg: %s" % (img_path, type(e), e))
         return url
 
